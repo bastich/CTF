@@ -42,4 +42,6 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
 > Cryptographia epistolica, sive de clandestina scriptione - Erycius Puteanus (1574 - 1646)
 
+###### `Low Hanging Fruit`
 
+* 
