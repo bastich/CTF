@@ -18,7 +18,7 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
   * For **payloads** and **shellcode** related things [payloadsallthethings](https://github.com/swisskyrepo/PayloadsAllTheThings), [shell-strorm](http://shell-storm.org/shellcode/)
   * For **forensic** related tasks [file headers](https://www.garykessler.net/library/file_sigs.html), [hexedit online](https://hexed.it/) this last one is normally only used for quick data inspection or identification.
 
-* Last is app or browser tab connection to the related social media of CTF organisers or good CTF player channels, the main one that is always open is [JHDiscord](https://discordapp.com/invite/UU3WQdf) - John Hammond discord server.
+* Last is app or browser tab connection to the related social media of CTF organisers or good CTF player channels, the main one that is always open is [JHDiscord](https://discordapp.com/invite/UU3WQdf) - John Hammond's discord server, also make sure you checkout his [ctf-katana](https://github.com/JohnHammond/ctf-katana) a ctf guide that this very guide is enspired by.
 
 ##### CTF Start
 
@@ -35,12 +35,11 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
    
 * Read the rules (normally contains a flag for easy starter points)
 * Connect to organisers social media (again most always contains a flag for easy points) and provides hints and tips
-
+* Fire up your [playlist-defcon-26](https://defconcommunications.bandcamp.com/album/def-con-26-the-official-soundtrack) and settle in for the long haul
 <hr>
 
-#### Misc
+# Crypto
 
-> Generally contains the intro challenges and easy points for doing a bit of research and or googling etc.
+> Cryptographia epistolica, sive de clandestina scriptione - Erycius Puteanus (1574 - 1646)
 
-* One of the first ones is almost always a flag for reading the rules or joining/reading the social media discord / slack / twitter / facebook etc. As a general rule and good practise we should do that these anyway as they onften provide hints and tricks during the CTF.
 
