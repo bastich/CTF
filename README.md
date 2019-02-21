@@ -82,3 +82,5 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
   * > y55x z9 6z 6882 NS! - shifted 13 times on (a-z) and 5 on (0-9)
   
+###### <div color="yellow">`Challenging`</div>
+
