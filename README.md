@@ -44,4 +44,10 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
 ###### `Low Hanging Fruit`
 
-* 
+###### base64
+* One of the most commonly used is [base64](https://en.wikipedia.org/wiki/Base64) encoding, easily identifiable by the use of = signs as padding, these padding characters might be added to make the last encoded block contain four Base64 characters.
+
+  * > bDAwayBtNCAxbSAxMzM3IEFGIQ== <<decoded>> l00k m4 1m 1337 AF!
+  * > using linux terminal to decode echo "bDAwayBtNCAxbSAxMzM3IEFGIQ==" | base64 -d
+  * > or there are 100s of decoders online like [cryptii base64-to-text](https://cryptii.com/pipes/base64-to-text)
+
