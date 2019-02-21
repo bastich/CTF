@@ -44,10 +44,21 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
 ###### `Low Hanging Fruit`
 
-###### base64
 * One of the most commonly used is [base64](https://en.wikipedia.org/wiki/Base64) encoding, easily identifiable by the use of = signs as padding, these padding characters might be added to make the last encoded block contain four Base64 characters.
 
-  * > bDAwayBtNCAxbSAxMzM3IEFGIQ== <<decoded>> l00k m4 1m 1337 AF!
+  * > bDAwayBtNCAxbSAxMzM3IEFGIQ== \<<decoded\>> l00k m4 1m 1337 AF!
   * > using linux terminal to decode echo "bDAwayBtNCAxbSAxMzM3IEFGIQ==" | base64 -d
   * > or there are 100s of decoders online like [cryptii base64-to-text](https://cryptii.com/pipes/base64-to-text)
 
+* Decimal type encoding is another commonly used crypto type for the easy pointers, this will include **deciaml**, **hexadecimal**, **binary** and **ascii chars** to name a the most used, 100s of decoders are available online again [cryptii](https://cryptii.com/) to the rescue, examples for *l00k m4 1m 1337 AF!*:
+
+  * > 108 48 48 107 32 109 52 32 49 109 32 49 51 51 55 32 65 70 33 - Decimal base 10 
+  * > 1101100 110000 110000 1101011 100000 1101101 110100 100000 110001 1101101 100000 110001 110011 110011 110111 100000 1000001 1000110 100001 - Binary base 2
+  * > 6c 30 30 6b 20 6d 34 20 31 6d 20 31 33 33 37 20 41 46 21 - Hexadecimal base 16
+  * > 154 60 60 153 40 155 64 40 61 155 40 61 63 63 67 40 101 106 41 - Octal base 8
+  
+* Another two basic encodings used that are a bit obscure (visually) are [morse code](https://en.wikipedia.org/wiki/Morse_code) and [braille](https://en.wikipedia.org/wiki/Braille), again decoders can be found online. The best I found for morse code is [scphillips](https://morsecode.scphillips.com/translator.html) this even has the ability to do audio files. For braille you can use [dcode](https://www.dcode.fr/braille-alphabet), examples for *l00k m4 1m 1337 AF!*:
+
+  * > ⠇⠼⠚⠼⠚⠅ ⠍⠼⠙ ⠼⠁⠍ ⠼⠁⠼⠉⠼⠉⠼⠛ ⠁⠋⠖ - braille (international)
+  * > .-.. ----- ----- -.- / -- ....- / .---- -- / .---- ...-- ...-- --... / .- ..-. -.-.-- / - morse code
+  
