@@ -25,7 +25,7 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 > First things first...
 
 * Hit the terminal hard with mkdir -p (create parent path at the same time) to get all the section and challenges down as directories, normally under liveCTF dir.
-   * > mkdir -p <thectfname>/<challengesection>, example: mkdir -p picoCTF19/crypto
+   * > mkdir -p \<thectfname\>/\<challengesection\>, example: mkdir -p picoCTF19/crypto
 * Same goes for the actual challenges and their descriptions (just as simple text files) plus any related files, this helps tremendeously when the system goes down (it happens way to often, just think the 100's of hackers chucking fuzzes and scrapers at the all the things ;)
    * > mkdir -p <challengesection>/<challenge>, example: mkdir -p crypto/caesar_lives
    * > download or create related files for the challenge, example: ciphertext.txt
