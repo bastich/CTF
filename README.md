@@ -35,7 +35,7 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
    
 * Read the rules (normally contains a flag for easy starter points)
 * Connect to organisers social media (again most always contains a flag for easy points) and provides hints and tips
-* Fire up your [playlist-defcon-26](https://defconcommunications.bandcamp.com/album/def-con-26-the-official-soundtrack) and settle in for the long haul
+* Fire up your playlist [defcon-26](https://defconcommunications.bandcamp.com/album/def-con-26-the-official-soundtrack) and settle in for the long haul
 <hr>
 
 # Crypto
@@ -44,7 +44,7 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
 ###### `Low Hanging Fruit`
 
-* One of the most commonly used is [base64](https://en.wikipedia.org/wiki/Base64) encoding, easily identifiable by the use of = signs as padding, these padding characters might be added to make the last encoded block contain four Base64 characters.
+* One of the most commonly used is [base64](https://en.wikipedia.org/wiki/Base64) encoding, easily identifiable by the use of = signs as padding, these padding characters might be added to make the last encoded block contain four Base64 characters. There will normally be some sort of hint towards the encoding or cipher used, example *bastich is 64 years old but still calls his mother*
 
   * > bDAwayBtNCAxbSAxMzM3IEFGIQ== \<<decoded\>> l00k m4 1m 1337 AF!
   * > using linux terminal to decode echo "bDAwayBtNCAxbSAxMzM3IEFGIQ==" | base64 -d
@@ -66,9 +66,19 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
   * > ;--l ,5 2, 2448 SG@ - shifted right once
   
-* Reverse text can be an easy one to catch people out and send them down the rabbit hole, xample for *l00k m4 1m 1337 AF!*:
+* Reverse text can be an easy one to catch people out and send them down the rabbit hole, example for *l00k m4 1m 1337 AF!*:
 
   * > !FA7331m14mk00l - reversed and stripped
-  * > easy way to reverse text with python - ```python print("!FA7331m14mk00l"\[::-1\])```
-  * > easy way to reverse text in ruby - ```ruby puts "!FA7331m14mk00l".reverse```
+  * > easy way to reverse text with python - ```print("!FA7331m14mk00l"[::-1])```
+  * > easy way to reverse text in ruby - ```puts "!FA7331m14mk00l".reverse```
+  
+* Substitution, caesar or atbash monoalphabetic cipher uses a single fixed substitution across the entire text resulting in a good cipher but easily reversed, the best tool for it is [quipquip](https://quipqiup.com/) or [dcode](https://www.dcode.fr/monoalphabetic-substitution) has some good options for bruteforcing the ciphertext with various options, example for *l00k m4 1m 1337 AF!*:
+
+  * > S00Q D4 1D 1337 AY! - substitution using AZERTYUIOPQSDFGHJKLMWXCVBN
+  * > oCCn p7 4p 4660 DI! - caesar shifted 3 times with \[a-z\]\[A-Z\]\[0-9\]
+  * > k99i k2 Xj XYY3 6A! - decreasing shift (-1,-2,-3,-4)
+  
+* This brings us to ROT13 basically a caesar cipher shifting 13 times (normally shifted 5 on numbers), the shift is across teh entire text so easily deciphered using [dcode](https://www.dcode.fr/rot-13-cipher), example for *l00k m4 1m 1337 AF!*:
+
+  * > y55x z9 6z 6882 NS! - shifted 13 times on (a-z) and 5 on (0-9)
   
