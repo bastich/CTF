@@ -16,9 +16,9 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 * Next is main browser tab setup, this almost always consists of the following services or resources, that have come to the rescue more than I dare to count. 
   * For **crypto** related things [cryptii](https://cryptii.com/), [dcode](https://www.dcode.fr/) and [tio](https://tio.run/) this last one is amazing for esoteric languages.
   * For **payloads** and **shellcode** related things [payloadsallthethings](https://github.com/swisskyrepo/PayloadsAllTheThings), [shell-strorm](http://shell-storm.org/shellcode/)
-  * For **forensic** related tasks [file headers](https://www.garykessler.net/library/file_sigs.html), [Online Hex Edit](https://hexed.it/) this last one is normally only used for quick data inspection or identification.
+  * For **forensic** related tasks [file headers](https://www.garykessler.net/library/file_sigs.html), [hexedit online](https://hexed.it/) this last one is normally only used for quick data inspection or identification.
 
-* Last is app or browser tab connection to the related social media of CTF organisers or good CTF player channels, the main one that is always open is [JHDiscord](https://discordapp.com/invite/UU3WQdf)
+* Last is app or browser tab connection to the related social media of CTF organisers or good CTF player channels, the main one that is always open is [JHDiscord](https://discordapp.com/invite/UU3WQdf) - John Hammond discord server.
 <hr>
 
 #### Misc
