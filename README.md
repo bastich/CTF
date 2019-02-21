@@ -72,15 +72,19 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
   * > easy way to reverse text with python - ```print("!FA7331m14mk00l"[::-1])```
   * > easy way to reverse text in ruby - ```puts "!FA7331m14mk00l".reverse```
   
-* Substitution, caesar or atbash monoalphabetic cipher uses a single fixed substitution across the entire text resulting in a good cipher but easily reversed, the best tool for it is [quipquip](https://quipqiup.com/) or [dcode](https://www.dcode.fr/monoalphabetic-substitution) has some good options for bruteforcing the ciphertext with various options, example for *l00k m4 1m 1337 AF!*:
+* Substitution, Caesar or Atbash monoalphabetic cipher uses a single fixed substitution across the entire text resulting in a good cipher but easily reversed, the best tool for it is [quipquip](https://quipqiup.com/) or [dcode](https://www.dcode.fr/monoalphabetic-substitution) has some good options for bruteforcing the ciphertext with various options, example for *l00k m4 1m 1337 AF!*:
 
   * > S00Q D4 1D 1337 AY! - substitution using AZERTYUIOPQSDFGHJKLMWXCVBN
   * > oCCn p7 4p 4660 DI! - caesar shifted 3 times with \[a-z\]\[A-Z\]\[0-9\]
   * > k99i k2 Xj XYY3 6A! - decreasing shift (-1,-2,-3,-4)
   
-* This brings us to ROT13 basically a caesar cipher shifting 13 times (normally shifted 5 on numbers), the shift is across teh entire text so easily deciphered using [dcode](https://www.dcode.fr/rot-13-cipher), example for *l00k m4 1m 1337 AF!*:
+* This brings us to ROT13 basically a Caesar cipher shifting 13 times (normally shifted 5 on numbers), the shift is across teh entire text so easily deciphered using [dcode](https://www.dcode.fr/rot-13-cipher), example for *l00k m4 1m 1337 AF!*:
 
   * > y55x z9 6z 6882 NS! - shifted 13 times on (a-z) and 5 on (0-9)
   
-###### <div color="yellow">`Challenging`</div>
+###### `Challenging`
+
+* [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher), cipher encrypting text using a series of Caesar ciphers, based on the letters of a defined keyword. It is a form of polyalphabetic substitution a whole new game change from the simple monoalphabetic substitution, [cryptii](https://cryptii.com/pipes/vigenere-cipher) is a good start or [dcode](https://www.dcode.fr/vigenere-cipher), example for *l00k m4 1m 1337 AF!*:
+
+  * > m0R4 u6 8n 1KLE CM! - ciphered with \[A-Z\]\[0-9\] variant, key = bastich (repeating)
 
