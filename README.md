@@ -62,3 +62,13 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
   * > ⠇⠼⠚⠼⠚⠅ ⠍⠼⠙ ⠼⠁⠍ ⠼⠁⠼⠉⠼⠉⠼⠛ ⠁⠋⠖ - braille (international)
   * > .-.. ----- ----- -.- / -- ....- / .---- -- / .---- ...-- ...-- --... / .- ..-. -.-.-- / - morse code
   
+* [Keyboard shift cipher](https://www.dcode.fr/keyboard-shift-cipher) is another well used one, shifting the letters either right, left, up or down any number of times results in some rather random text, example for *l00k m4 1m 1337 AF!*:
+
+  * > ;--l ,5 2, 2448 SG@ - shifted right once
+  
+* Reverse text can be an easy one to catch people out and send them down the rabbit hole, xample for *l00k m4 1m 1337 AF!*:
+
+  * > !FA7331m14mk00l - reversed and stripped
+  * > easy way to reverse text with python - ```python print("!FA7331m14mk00l"\[::-1\])```
+  * > easy way to reverse text in ruby - ```ruby puts "!FA7331m14mk00l".reverse```
+  
