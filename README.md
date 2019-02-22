@@ -3,7 +3,7 @@
 > Bastich _aka_ Lobo Bastich - 2019
 
 <hr>
-A place for CTF information, mostly related to challenges, tools and tricks to hopefully make solving these fraggin things a little easier. The idea will be to have two to three sections respectivley (example: low hanging fruit, challenging and wtf_even), per topic and/or tool.
+A place for CTF information, mostly related to challenges, tools and tricks to hopefully make solving these fraggin things a little easier. The idea will be to have two to three sections respectivley (example: low hanging fruit, challenging and wtf_even), per topic and/or tool. This could change at anytime...
 
 <hr>
 
@@ -28,14 +28,14 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
    * > mkdir -p \<thectfname\>/\<challengesection\>, example: mkdir -p picoCTF19/crypto
    
-* Same goes for the actual challenges and their descriptions (just as simple text files) plus any related files, this helps tremendeously when the system goes down (it happens way to often, just think the 100's of hackers chucking fuzzes and scrapers at the all the things ;)
+* Same goes for the actual challenges and their descriptions (just as simple text files) plus any related files, this helps tremendeously when the system goes down (it happens way to often, just think of the 100's of hackers chucking fuzzers and scrapers at all of the things ;)
 
    * > mkdir -p \<challengesection\>/\<challenge\>, example: mkdir -p crypto/caesar_lives
    * > download or create related files for the challenge, example: ciphertext.txt
    
 * Read the rules (normally contains a flag for easy starter points)
 * Connect to organisers social media (again most always contains a flag for easy points) and provides hints and tips
-* Fire up your playlist [defcon-26](https://defconcommunications.bandcamp.com/album/def-con-26-the-official-soundtrack) and settle in for the long haul
+* Fire up your playlist, example [defcon-26](https://defconcommunications.bandcamp.com/album/def-con-26-the-official-soundtrack) and settle in for the long haul
 <hr>
 
 # Crypto
@@ -90,5 +90,18 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
   
 * [Enigma machine](https://en.wikipedia.org/wiki/Enigma_machine), this only just does not make the wtf_even group, purley for the fact that we have computers to help solve the cipher. Even with all the computing power in the world it is still mostly a manual task for CTF, unless you have access to some supercomputers and can code like a beast. It does work better on longer text and no numbers so here is the example for look ma im leet AF!*7:
 
- * > pgrr kx aa ztzp cd!inca lf ac cgtg jt!otsy th ta dgud or!jaxj vd oi rsyk bp!sqpb et qy ktrb kx!ydne so jx mzsd fl!eamb zj bs ozca lq! - Enigma M3, reflector = UKW B, rotor1 = \[VI,1,1\], rotor2 = \[I,17,1\], rotor3 = \[III,12,1\], plugboard = bq cr di ej kw mt os px uz gh, foreign chars = include - decoder [cryptii](https://cryptii.com/pipes/enigma-machine)
+  * > pgrr kx aa ztzp cd!inca lf ac cgtg jt!otsy th ta dgud or!jaxj vd oi rsyk bp!sqpb et qy ktrb kx!ydne so jx mzsd fl!eamb zj bs ozca lq! - Enigma M3, reflector = UKW B, rotor1 = \[VI,1,1\], rotor2 = \[I,17,1\], rotor3 = \[III,12,1\], plugboard = bq cr di ej kw mt os px uz gh, foreign chars = include - decoder [cryptii](https://cryptii.com/pipes/enigma-machine)
+  
+* [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) ECB (Electronic Codebook) is best described as the BSQLi of the crypto world, in that you can bruteforce the key it being the first generation of AES. CBC (Cipher Blocker Chaining) is an advanced form of block cipher encryption, and that is in the wtf_even section below. ECB example for *l00k m4 1m 1337 AF!* 
+
+  * > 53FF897C204A5E841B64BC516F98BDF09DA7DC32A38AE6521EE78A00E34815CB - using plaintext key of bastich (repeating to 16) 128bit
+  
+
+	
+ 
+
+
+	  	  	
+
+
 
