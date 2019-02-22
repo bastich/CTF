@@ -87,4 +87,8 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 * [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher), cipher encrypting text using a series of Caesar ciphers, based on the letters of a defined keyword. It is a form of polyalphabetic substitution a whole new game change from the simple monoalphabetic substitution, [cryptii](https://cryptii.com/pipes/vigenere-cipher) is a good start or [dcode](https://www.dcode.fr/vigenere-cipher), example for *l00k m4 1m 1337 AF!*:
 
   * > m0R4 u6 8n 1KLE CM! - ciphered with \[A-Z\]\[0-9\] variant, key = bastich (repeating)
+  
+* [Enigma machine](https://en.wikipedia.org/wiki/Enigma_machine), this only just does not make the wtf_even group, purley for the fact that we have computers to help solve the cipher. Even with all the computing power in the world it is still mostly a manual task for CTF, unless you have access to some supercomputers and can code like a beast. It does work better on longer text and no numbers so here is the example for look ma im leet AF!*7:
+
+ * > pgrr kx aa ztzp cd!inca lf ac cgtg jt!otsy th ta dgud or!jaxj vd oi rsyk bp!sqpb et qy ktrb kx!ydne so jx mzsd fl!eamb zj bs ozca lq! - Enigma M3, reflector = UKW B, rotor1 = \[VI,1,1\], rotor2 = \[I,17,1\], rotor3 = \[III,12,1\], plugboard = bq cr di ej kw mt os px uz gh, foreign chars = include - decoder [cryptii](https://cryptii.com/pipes/enigma-machine)
 
