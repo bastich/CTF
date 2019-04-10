@@ -17,6 +17,7 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 	* For **crypto** related things [cryptii](https://cryptii.com/), [dcode](https://www.dcode.fr/) and [tio](https://tio.run/) this last one is amazing for esoteric languages.
 	* For **payloads** and **shellcode** related things [payloadsallthethings](https://github.com/swisskyrepo/PayloadsAllTheThings), [shell-strorm](http://shell-storm.org/shellcode/)
 	* For **forensic** related tasks [file headers](https://www.garykessler.net/library/file_sigs.html), [hexedit online](https://hexed.it/) this last one is normally only used for quick data inspection or identification.
+	* For **pwn** and **reversing** related things, if you don't have a debugger/disassembler for some reaaon the [online disassembler](https://onlinedisassembler.com) is an awesome tool or there is also [online gdb](https://www.onlinegdb.com/) for debugging etc.
 
 * Last is app or browser tab connection to the related social media of CTF organisers or good CTF player channels, the main one that is always open is [JHDiscord](https://discordapp.com/invite/UU3WQdf) - John Hammond's discord server, also make sure you checkout his [ctf-katana](https://github.com/JohnHammond/ctf-katana) a ctf guide that this very guide is enspired by.
 
@@ -44,11 +45,16 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
 ###### `Low Hanging Fruit`
 
-* One of the most commonly used is [base64](https://en.wikipedia.org/wiki/Base64) encoding, easily identifiable by the use of = signs as padding, these padding characters might be added to make the last encoded block contain four Base64 characters. There will normally be some sort of hint towards the encoding or cipher used, example *bastich is 64 years old but still calls his mother*
+* One of the most commonly used is [base64](https://en.wikipedia.org/wiki/Base64) encoding, easily identifiable by the use of the = (equal) sign as padding, these padding characters might be added to make the last encoded block contain four Base64 characters. The encoded text is also produced using \[a-s,A-Z,0-9\] only and could not contain the padding =  if the encoded text matches the 4 byte encoding rule. There will normally be some sort of hint towards the encoding or cipher used, example *bastich is 64 years old but still calls his mother*
 
 	* > bDAwayBtNCAxbSAxMzM3IEFGIQ== \<<decoded\>> l00k m4 1m 1337 AF!
-	* > using linux terminal to decode echo "bDAwayBtNCAxbSAxMzM3IEFGIQ==" | base64 -d
-	* > or there are 100s of decoders online like [cryptii base64-to-text](https://cryptii.com/pipes/base64-to-text)
+	* > using linux terminal to decode echo -n bDAwayBtNCAxbSAxMzM3IEFGIQ== | base64 -d
+	* > or there are 100s of encoders/decoders online like [cryptii base64-to-text](https://cryptii.com/pipes/base64-to-text)
+
+* If base64 don't work try [base32](https://en.wikipedia.org/wiki/Base32) or [base85/ascii85](https://en.wikipedia.org/wiki/Ascii85) although the encoded text will look different from the base64 text, as seen below using the examples for *l00k m4 1m 1337 AF!*:
+	
+	* > NQYDA2ZANU2CAMLNEAYTGMZXEBAUMII= \<<decoded\>> l00k m4 1m 1337 AF! - base32 encoded
+	* > CbRPY+DiqX0l8$f1G^s45t3! \<<decoded\>> l00k m4 1m 1337 AF! - base85/ascii85 encoded
 
 * Decimal type encoding is another commonly used crypto type for the easy pointers, this will include **deciaml**, **hexadecimal**, **binary** and **ascii chars** to name a the most used, 100s of decoders are available online again [cryptii](https://cryptii.com/) to the rescue, examples for *l00k m4 1m 1337 AF!*:
 
@@ -57,7 +63,7 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 	* > 6c 30 30 6b 20 6d 34 20 31 6d 20 31 33 33 37 20 41 46 21 - Hexadecimal base 16
 	* > 154 60 60 153 40 155 64 40 61 155 40 61 63 63 67 40 101 106 41 - Octal base 8
   
-* Another two basic encodings used that are a bit obscure (visually) are [morse code](https://en.wikipedia.org/wiki/Morse_code) and [braille](https://en.wikipedia.org/wiki/Braille), again decoders can be found online. The best I found for morse code is [scphillips](https://morsecode.scphillips.com/translator.html) this even has the ability to do audio files. For braille you can use [dcode](https://www.dcode.fr/braille-alphabet), examples for *l00k m4 1m 1337 AF!*:
+* Another two encodings, that are commonly used but a bit obscure (visually) are [morse code](https://en.wikipedia.org/wiki/Morse_code) and [braille](https://en.wikipedia.org/wiki/Braille), again decoders can be found online. The best I found for morse code is [scphillips](https://morsecode.scphillips.com/translator.html) this even has the ability to do audio files. For braille you can use [dcode](https://www.dcode.fr/braille-alphabet), examples for *l00k m4 1m 1337 AF!*:
 
 	* > ⠇⠼⠚⠼⠚⠅ ⠍⠼⠙ ⠼⠁⠍ ⠼⠁⠼⠉⠼⠉⠼⠛ ⠁⠋⠖ - braille (international)
 	* > .-.. ----- ----- -.- / -- ....- / .---- -- / .---- ...-- ...-- --... / .- ..-. -.-.-- / - morse code
@@ -78,9 +84,13 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 	* > oCCn p7 4p 4660 DI! - caesar shifted 3 times with \[a-z\]\[A-Z\]\[0-9\]
 	* > k99i k2 Xj XYY3 6A! - decreasing shift (-1,-2,-3,-4)
   
-* This brings us to ROT13 basically a Caesar cipher shifting 13 times (normally shifted 5 on numbers), the shift is across teh entire text so easily deciphered using [dcode](https://www.dcode.fr/rot-13-cipher), example for *l00k m4 1m 1337 AF!*:
+* This brings us to ROT13 basically a Caesar cipher shifting 13 times (normally shifted 5 on numbers), the shift is across the entire text so easily deciphered using [dcode](https://www.dcode.fr/rot-13-cipher), example for *l00k m4 1m 1337 AF!*:
 
 	* > y55x z9 6z 6882 NS! - shifted 13 times on (a-z) and 5 on (0-9)
+	
+* Then there is of course ROT47, same as ROT13 but has the addition to scramb basic letters, numbers and common symbols rather than just the standard alphabet.
+
+	* \> =__\< \>c \`\> \`bbf puP - rot47 encoded l00k m4 1m 1337 AF!
   
 ###### `Challenging`
 
