@@ -88,9 +88,9 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
 	* > y55x z9 6z 6882 NS! - shifted 13 times on (a-z) and 5 on (0-9)
 	
-* Then there is of course ROT47, same as ROT13 but has the addition to scramb basic letters, numbers and common symbols rather than just the standard alphabet.
+* Then there is of course [ROT47](https://rot47.net/), same as ROT13 but has the addition to scramb basic letters, numbers and common symbols rather than just the standard alphabet.
 
-	* \> =__\< \>c \`\> \`bbf puP - rot47 encoded l00k m4 1m 1337 AF!
+	* > =__\< \>c \`\> \`bbf puP - rot47 encoded l00k m4 1m 1337 AF!
   
 ###### `Challenging`
 
