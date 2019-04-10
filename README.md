@@ -151,7 +151,7 @@ Horrrrrrrrrrible , o , w - translates to Hello World!
 	* > 😂😂😂😂😂😂😂😂🌚🔥😂😂😂😂🌚🔥😂😂🔥😂😂😂🔥😂😂😂🔥😂💯💯💯💯💩🐸🔥😂🔥😂🔥💩🔥🔥😂🌚💯🐸💯💩🐸🔥🔥💞🔥💩💩💩💞😂😂😂😂😂😂😂💞💞😂😂😂💞🔥🔥💞💯💩💞💯💞😂😂😂💞💩💩💩💩💩💩💞💩💩💩💩💩💩💩💩💞🔥🔥😂💞🔥😂😂💞 -translates to Hello World! 
 * [eta](http://www.miketaylor.org.uk/tech/eta/doc/) - esolang to resemble natural latin based languages
 	* > NINENAHAENATOENAAAENATSENTNOENIIENSAENATSENATOENATOENAHOENTOAEOOOOOOOOOOOOO - translates to Hello World!
-* {explode](https://github.com/stestoltz/Explode) -  esolang based on WIP tape, meaning that every access attempt has its access index modulated by the length of the tape, so you cannot attempt to read outside the tape.
+* [explode](https://github.com/stestoltz/Explode) -  esolang based on WIP tape, meaning that every access attempt has its access index modulated by the length of the tape, so you cannot attempt to read outside the tape.
 	* > @1_0+E 
 @1_0+17 
 @1_0+1e 
@@ -165,7 +165,9 @@ Horrrrrrrrrrible , o , w - translates to Hello World!
 @1_0+1e 
 @1_0+16 
 @1_0+1 - translates to Hello World!	  	  	
-*
+
+* [forked](https://github.com/aaronryank/Forked) - stack based two-dimensional esolang, triangulated and wriiten around the fork command.
+	* > 89*@AA*i@7+@@3+@P4B*@C'!F+!U@3+@6'@8'@3B*!& - translates to Hello World!
 
 
 
