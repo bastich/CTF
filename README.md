@@ -55,6 +55,8 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 	
 	* > NQYDA2ZANU2CAMLNEAYTGMZXEBAUMII= \<<decoded\>> l00k m4 1m 1337 AF! - base32 encoded
 	* > CbRPY+DiqX0l8$f1G^s45t3! \<<decoded\>> l00k m4 1m 1337 AF! - base85/ascii85 encoded
+	
+	<aside class="warning">Don't be fooled by the aes-128-cbc-hmac-sha1 cipher, as it looks just like base64 encoded text - *MNb8BzccxHIVhuJ414jkikhPGtwyR2If3KOj5aKe1yE=* l00k m4 1m 1337 AF! ciphered with private key \[sameasbase64\]  .</aside>
 
 * Decimal type encoding is another commonly used crypto type for the easy pointers, this will include **deciaml**, **hexadecimal**, **binary** and **ascii chars** to name a the most used, 100s of decoders are available online again [cryptii](https://cryptii.com/) to the rescue, examples for *l00k m4 1m 1337 AF!*:
 
