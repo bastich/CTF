@@ -1,3 +1,6 @@
+
+
+
 # ctf-dawg
 
 > Bastich _aka_ Lobo Bastich - 2019
@@ -55,10 +58,10 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 	
 	* > NQYDA2ZANU2CAMLNEAYTGMZXEBAUMII= \<<decoded\>> l00k m4 1m 1337 AF! - base32 encoded
 	* > CbRPY+DiqX0l8$f1G^s45t3! \<<decoded\>> l00k m4 1m 1337 AF! - base85/ascii85 encoded
-	
-	
-**NOTE:** * > Don't be fooled by the aes-128-cbc-hmac-sha1 cipher, as it looks just like base64 encoded text - 	*MNb8BzccxHIVhuJ414jkikhPGtwyR2If3KOj5aKe1yE=* l00k m4 1m 1337 AF! ciphered with private key \[sameasbase64\].
+<hr>	
 
+**NB:** Don't be fooled by the aes-128-cbc-hmac-sha1 cipher, as it looks just like base64 encoded text - MNb8BzccxHIVhuJ414jkikhPGtwyR2If3KOj5aKe1yE=  --- *l00k m4 1m 1337 AF!* ciphered with private key \[sameasbase64\].
+<hr>
 
 * Decimal type encoding is another commonly used crypto type for the easy pointers, this will include **deciaml**, **hexadecimal**, **binary** and **ascii chars** to name a the most used, 100s of decoders are available online again [cryptii](https://cryptii.com/) to the rescue, examples for *l00k m4 1m 1337 AF!*:
 
@@ -116,11 +119,32 @@ A place for CTF information, mostly related to challenges, tools and tricks to h
 
 	* > D5A9BD786FD06E7347639750699CF718E3BB3668A5608C45E9E6201DD6147585 - CBC 256bit / IV key = !l00km41m1337AF!, secret key = bastichbastichbastichbastichbast (32)
 
-	
- 
+<hr>
 
+## Crypto - Esoteric Languages	
+
+> Restricted to or intended for an enlightened or initiated minority, esp because of abstruseness or obscurity - British meaning (Collins English Dictionary)
+
+* By far the best and most comprehensive tools for esoteric languages has to be [Try It Online](https://tio.run/#) with the ability to interpret over a 637 languages, it remains at the top as a CTF tool.
+
+* Some of the more commonly used [esolangs](https://esolangs.org/wiki/Language_list) in CTFs :
+* [2DFuck](https://gitlab.com/TheWastl/2DFuck) - Often mistaken for a muted version of morse code
+	* > .!.!..!.!....!..!..!.!.!.!.!..!.!..!...!..!.!..!...!..!.!....!..!.!.!..!....!.!......!.!.!.!.!...!.!..!.!....!.!...!..!.!..!..!.!..!...!..!..!.!....!.!....!. - translates to Hello World!
+* [3var](https://esolangs.org/wiki/3var) - esolang inspired by Deadfish, makes use of 3 variables, 2 for accumelators and the other for results. Identifiable by the heavy use of i and d and P :
+	* > iisssaa/>emaa->e#aamam->e#dddddddddddddddddddddddddPiiiiiiiiiiiiiiiiiiiiiiiiiiiiiPiiiiiiiPPiiiPriissaa*>iiiiiiiiiiiiPriisaamaaaa*>Priisssaa/>emaa->e#aamam->e#ddddddddddPiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiddddddddPiiiPddddddPddddddddPriissaa*>iP - translates to Hello World!
+* [;#+](https://github.com/ConorOBrien-Foxx/shp)  - shp is the same as ;# (semicolon hash) but Turing complete, meaning it has a one-to-one comparision to brainfuck
+	* > ;;;;;;;;;~++++++++>#<+++;;:>#<+-;;>#<#<-;;;>#<-+++++++;;;;-:>#<-+;;;#::<;;;-++#:<#<;;;#-<;;;#<+;;#-:<-+;;# - translates to Hello World!
+* [Beatnik](https://esolangs.org/wiki/Beatnik) - a stack based esolang, where the words are scored according to the scrabble board which in turn determines the operation for the stack.
+	* > K QQQQQQQG ZD XO K QQJA KD ZD XO K KG KD ZD ZD ZD XO XO K B KD ZD XO K QQQQF ZD ZD XO K QQQD XO K A Z KD XO ZD XO K B KD XO ZD XO K J Z XO K QQQB XO - translate to Hello World!
+* [brainfuck](https://esolangs.org/wiki/Brainfuck) - probably the most famous and popular esolang used in CTF world, orginally created to make the smallest possible compiler on Amiga OS (only 240 bytes, Holy Fuck!) 
+	* > --<-<<+[+[<+>--->->->-<<<]>]<<--.<++++++.<<-..<<.<+.>>.>>.<<<.+++.>>.>>-.<<<+. - translates to Hello World!
+* [commentator](https://github.com/cairdcoinheringaahing/Commentator) - designed to fit well with polygots using common comment characters.
+	* > \                                                                        /*#                                                                                                     /*#                                                                                                            /*#                                                                                                            /*#                                                                                                               /*#                                            /*#                                /*#                                                                                       /*#                                                                                                               /*#                                                                                                                  /*#                                                                                                            /*#                                                                                                    /*#                                 /*# - translates to Hello World!
+* [cow](https://bigzaphod.github.io/COW/)  -  designed with bovine in mind and the fact they have such a limited vocab, it seemed the most logical way to communicate.
+	* > MOo MOo MOo moO MOo moO MOo moO moO MoO moO MoO moO moO MoO MOO MoO MoO MoO MoO MOO moO MoO MoO MoO MOO moO MoO MoO MoO MoO moO MOo MOo moO MoO MoO MoO mOo mOo mOo MOo moo mOo MOo moo mOo MoO MoO MoO moo moO moO moO Moo moO MOo MOo moO MOo Moo moO Moo Moo MoO moO MoO MoO MoO MoO moO MoO MoO MoO Moo MoO moO MOo MOo moO MOO moO MOo Moo mOo mOo moo - translates to Hello World!
 
 	  	  	
+
 
 
 
