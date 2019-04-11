@@ -218,3 +218,85 @@ Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook. Ook! Ook.
  ▼►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 ▼►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►►
 ◄ - translates to Hello World!
+
+* [snails](https://github.com/feresum/PMA) - 2D esolang using pattern matching.
+	* > \p|\P)z(\a|\A)z{\n|\N)z{\a|\A}z(\m|\M)z(\a|\A
+
+* [stack cats](https://github.com/m-ender/stackcats) - SKS is a stack based reversible esolang, being reversible means that for every command there is a way to undo that command.
+	* > -*(:^-_-_:-_:-_:-_:-_-_:[:^]]:^!-*!->[!_>[!_>[{]>[^-_-_:]]<<<}>[!-:^[[\\>]:^[[>:[>:^[<<]]\\>[*>+:^:-_]:^[[-_*[>>>[-_[/<]>+^[>[<<]]*>[) -  translates to Hello World!
+
+* [symbolic python](https://esolangs.org/wiki/Symbolic_Python) - python 2 based esolang that only uses non-alphanumeric characters.
+	* > \__\__\__\__=\`_\`[\_=\=\_]
+\_=\_==\_
+\__\__=-~\_<<-~\_
+\__\__=\'%\'+\`\'�\'\`[~\_]
+\_=\__\__\__%(\__\__*-~\__\__)+\`\__\`[-\__]+`\__>\__`[-~\__]*-~\__+\__\__\__\__+\', \'+\__\__\__\__%\~-(\__\__*-~-~-~\__\__)+\__\__\__\__+\`\_\\`[\_]+\`\_>\_\`[-~\_]+\`\'�\'\`[~\_]+\'!\' - translates to Hello World!
+
+* [tapebagel](https://esolangs.org/wiki/TapeBagel) - esolang that uses integer arrays or three ints for its commands.
+	* > %++ %++ %++ %++ %++ %++ %++ %++ @* %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ @* %++ %++ %++ %++ %++ %++ %++ @* @* %++ %++ %++ @* ## %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- @* %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- @* ## %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ @* %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ %++ @* %++ %++ %++ @* %-- %-- %-- %-- %-- %-- @* %-- %-- %-- %-- %-- %-- %-- %-- @* ## %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- %-- @* - translates to Hello World!
+
+* [unicat](https://github.com/gemdude46/unicat) - esolang based solely on cat emojis, soft kitty, warm kitty...
+	* > 😻😹😸🙀🙀😹😹😸🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😼😽🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😽😼🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😽😼🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😽😿🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😽😼🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😼😸🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😺😿🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😽😿🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😾😺🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😽😼🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😼😼🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😼😹🙀🙀😽😼😸🙀🙀😻😹😸🙀🙀😹😺🙀🙀😽😼😸🙀🙀🙀🙀
+
+* [vowels](https://esolangs.org/wiki/Vowels_\(2017\)) - esolang that uses only upper and lower case english vowels, with the exception of y.
+	* >   ue
+  yeouo
+  euea
+  euai
+  euai
+  euoa
+  eaiu
+  eaao
+  eioo
+  euoa
+  euou
+  euai
+  euee
+  eaai
+  eeoe
+  eeee
+  y
+
+* [whitespace](https://web.archive.org/web/20150618184706/http://compsoc.dur.ac.uk/whitespace/tutorial.php) - esolang using only whitespace characters *space* (ascii 32), *tab* (ascii 9) and *linefeed* (ascii 10) that means shit totally hidden from view.
+	* >    
+  		  	 	 
+  				
+   	
+   			
+   	  
+  		 	  
+  		  	 		
+  							
+   	  
+   	
+ 
+   			 
+  		   		
+
+  
+ 
+ 
+	 	
+   		 	 		
+	   	
+  
+ 
+
+
+  	
+
+
+
+* [xEec](http://paulo-jorente.de/poncho/esolang/xEec/) - esolang based on a single 64-bit stack of unsigned integers.
+	* > h#10 h$! h$d h$l h$r h$o h$W h#32 h$, h$o h$l h$l h$e h$H >o o$ p jno - translates to Hello World!
+
+* [yup](https://github.com/ConorOBrien-Foxx/yup) -  yup thats it, just yup.
+	* > 0e00e-0e00e----|00e00e--|00e00e00e----|00e00e00e----|--e|--e|--e@0e0e00e--00e00e----|00e00e00e--|00e00e--|--e--|--e|000e-0e00e--00e00e-----|--e-@0e00e-0e00e----|00e00e00e----|00e00e00e----|00e00e00e----|--e|--e|--e:@@0e00e00e----|00e00e00e----|--e|00e00e--00e00e----|00e00e00e----|--e|--e00e-0e-0e--@0e00e-0e00e----|00e00e00e----|00e00e00e----|--e00e-0e--|--e@0e00e-0e00e----|00e00e--|00e00e--00e00e----|--e|--e:@00e-0e-0e-|00e0e00e00e--|00e00e--|--e--|00e00e--00e00e--|00e00e--|--e--|--e-|--e@0e00e00e----|00e00e00e----|--e|00e00e--00e00e----|00e00e00e----|--e|--e00e-0e-0e--@0e00e--|00e00e00e----|--e|00e00e--00e00e----|00e00e00e--|00e00e--|--e--|--e0e-|--e@0e00e-0e00e----|00e00e00e----|00e00e00e----|00e00e00e----|--e|--e|--e@0e00e-0e00e----|00e00e00e--00e00e------|00e00e00e--00e00e------|--e|--e@00e--@ - translates to Hello World!
+
+* [zucchini](https://esolangs.org/wiki/Zucchini) - esolang that uses graph nodes that send signals to other nodes.
+	* > =0,1.2./.0,1./.3.17. ` /.4.17.`../.5.17.`: /.6.17.`: /.7.17.`::/.8.17`: /.9.17`  /.10.17.:.:/.11.17.`::/.12.17.: `/.13.17.`: /.14.17.`. /.15.17` ./.16.17``/.19.
+
+
+<hr>
+
+**That's all folks** - at least for now!
