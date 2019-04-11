@@ -186,5 +186,8 @@ Horrrrrrrrrrible , o , w - translates to Hello World!
 	* > DO,1<-#14 DO,1SUB#1<-#238 DO,1SUB#2<-#108 DO,1SUB#3<-#112 PLEASE DO,1SUB#4<-#256 DO,1SUB#5<-#64 DO,1SUB#6<-#194 PLEASE DO,1SUB#7<-#48 DO,1SUB#8<-#26 DO,1SUB#9<-#244 PLEASE DO,1SUB#10<-#168 DO,1SUB#11<-#24 DO,1SUB#12<-#16 PLEASE DO,1SUB#13<-#162 DO,1SUB#14<-#52 DO READ OUT,1 DO GIVE UP - translates to Hello World!
 * [jelly](https://github.com/DennisMitchell/jellylanguage) - golfing esolang based off programming language called J.
 	*  > “3ḅaė;œ» - translates to Hello World!
-*
+* [kavod](https://github.com/ConorOBrien-Foxx/kavod) - turing tarpit esolang using memory stacks, which are represented by integers.
+	* > 72#101#108#108#111#44#32#87#111#114#108#100#33# -translates to Hello World!
+* [labyrinth](https://github.com/m-ender/labyrinth) - 2D esolang where the sorce code represents a maze navigated with instruction pointers.
+	* > 72.10:1.:8:..:):1:.#2#4..:1..4.:8.0.33.@ - translates to Hello World!
 
