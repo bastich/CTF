@@ -154,3 +154,46 @@ sbrk()
 s - translates to Hello World!
 * [malbolge](https://www.lscheffer.com/malbolge.shtml) - designed to be the most difficult esolang possible with it's mod 94 locations in memory and are self modifying.
 	* > ('&%:9]!~}|z2Vxwv-,POqponl\$Hjihf|B@@>,=<M:9&7Y#VV2TSn.Oe*c;(I&%$#"mCBA?zxxv*Pb8`qo42mZF.{Iy*@dD'<;_?!\}}|z2VxSSQ - translates to Hello World!
+*  [monkeys](https://esolangs.org/wiki/Monkeys) - esolang completely based on the interactions of monkeys.
+	* > 1 MARK
+1 LEARN
+1 YELL
+1 BACK - translates to CAT
+* [my](https://bitbucket.org/zacharyjtaylor/my-language) - designed for math-oriented golfing (AKA, IO sucks). It uses a stack-based postfix reversed order syntaxless approach.
+	* > 27á'←1Aá'←8Aá'2×←1Bá'←44á'←2Ġ'←78á'←1Bá'←4Bá'←8Aá'←AȦ'←33á'←
+* [no](https://github.com/cairdcoinheringaahing/Uno-No) - jsut No
+	* > NOOOOOOOOOOOOOOO?Noooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Nooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Noooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Noooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Nooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Noooooooooooooooooooooooooooooooooooooooooooo!Noooooooooooooooooooooooooooooooo!Nooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Nooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Noooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Noooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Noooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!Nooooooooooooooooooooooooooooooooo
+NOOOOOOOO?yes - translates to Hello World!
+* [numberwang](https://esolangs.org/wiki/Numberwang_\(brainfuck_derivative\)) - based on brainfuck except all commands are based on numbers.
+	* > 69696969696969693696969623673363316969696968359533059595636969663633563583193 - translates to Hello World!
+* [obcode](https://esolangs.org/wiki/ObCode) - object orientated, stack based, turing complete esolang.
+	* > ((())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())(())(()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()())(()()())) - translates to Hello World!
+* [oOo code](https://esolangs.org/wiki/OOo_CODE) - based on brainfuck but using the way millennials troll using upper and lower case chars to draw attention tho themselves.
+	* > OooOoooooOooooooooOoOoOoOoOoOooooOoOooOOooOooOooooOOooooOOooooOOooooooooooooOOooOoOOooooooOooOooOOooooOoOOoOOoOOoOOoOOoOOOoooooooOooOOoOOoooooooOOooooOoOOOoooOooOOOoooOooOOOooooooooooOOoOoOOoOOoOOOoooOooOOOoooOooOOooOOooooooooooOoOOOo - translates to Hello World!
+* [ook](https://esolangs.org/wiki/ook!) - orangutan based esolang based on brainfuck, there is also a shorthand version showcased in example 2
+	* > Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook.
+Ook! Ook. Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook?
+Ook! Ook! Ook? Ook! Ook? Ook. Ook. Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook! Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook! Ook.
+Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook.
+Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook.
+Ook? Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+Ook! Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook.
+Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
+Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook. Ook! Ook.
+
+* Example 2 shorthand version (no Ook):
+	*> \....................!?.?...?.......?...............?....................?.?.?.?.!!?!.?.?.?....!..?..!...............!.!.......!.?.?.....!..?..............................!..?!.......!.!!!!!!!!!!!!!.!!!!!!!!!!!!!!!!!.?.?...!.
+* [piet](http://www.dangermouse.net/esoteric/piet.html) - abstract art looking esolang that uses 20 distinct colour blocks to to generate an image.
+	* > ![piet - hi.png](https://raw.githubusercontent.com/cincodenada/bertnase_npiet/master/examples/hi.png)   
+
+* [prelude](https://esolangs.org/wiki/Prelude) - esolang that is an ascii version of [fugue](https://esolangs.org/wiki/Fugue) using voice parts as their own stack.
+	* > 92480969393782833909095806(^+^+^^+++!) - translates to Hello World!
