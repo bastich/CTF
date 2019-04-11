@@ -190,4 +190,11 @@ Horrrrrrrrrrible , o , w - translates to Hello World!
 	* > 72#101#108#108#111#44#32#87#111#114#108#100#33# -translates to Hello World!
 * [labyrinth](https://github.com/m-ender/labyrinth) - 2D esolang where the sorce code represents a maze navigated with instruction pointers.
 	* > 72.10:1.:8:..:):1:.#2#4..:1..4.:8.0.33.@ - translates to Hello World!
-
+* [locksmith](https://github.com/ConorOBrien-Foxx/Locksmith) - numeric esolang is all this can be described as.
+	* > 070271901007101719010071087190100710871901017101719040471903027190807719010171017190101710471901007108719010071007190303719 - translates to Hello World!
+* [machinecode](https://github.com/aaronryank/MachineCode) - native processor instructions esolang.
+	* > 4889f8c60748c6470165c647036cc647026cc647046fc647052cc6470620c6470757c647086fc6470972c6470a6cc6470b64c6470c21c6470d00c3
+sbrk()
+s - translates to Hello World!
+* [malbolge](https://www.lscheffer.com/malbolge.shtml) - designed to be the most difficult esolang possible with it's mod 94 locations in memory and are self modifying.
+	* > ('&%:9]!~}|z2Vxwv-,POqponl\$Hjihf|B@@>,=<M:9&7Y#VV2TSn.Oe*c;(I&%$#"mCBA?zxxv*Pb8`qo42mZF.{Iy*@dD'<;_?!\}}|z2VxSSQ - translates to Hello World!
